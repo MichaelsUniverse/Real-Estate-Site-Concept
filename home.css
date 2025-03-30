@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
 }
 
 body {
@@ -24,8 +24,8 @@ nav .nav-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 100px;
+    width: 225px;
+    height: 80px;
 }
 
 nav .nav-links {
@@ -75,7 +75,7 @@ nav .nav-links {
 }
 
 .hero-section .hero-image img {
-    max-width: 60vh;
+    width: clamp(420px, 60vh, 60vh);
     transform: translateY(30px);
 }
 
