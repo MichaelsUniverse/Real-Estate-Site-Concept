@@ -1,0 +1,100 @@
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: calc(var(--section-height) + 500px);
+
+    overflow: hidden;
+
+    color: white;
+
+    img {
+        margin: 0;
+        position: absolute;
+        z-index: -1;
+
+        width: clamp(1400px, 100%, 100%);
+        height: calc(var(--section-height) + 200px);
+        transform: scale(1.6);
+
+        object-fit: cover;
+
+        overflow: hidden;
+
+        filter: saturate(150%) brightness(60%) contrast(105%);
+    }
+}
+
+.contact-section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.contact-section .left .title {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    /* transform: translateY(-30px); */
+}
+
+.contact-section form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem; /* Adjusted padding for uniform spacing */
+    padding-right: 3rem; /* Added extra padding on the right */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+
+    transform: translateY(-30px);
+}
+
+.contact-section form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-section form input,
+.contact-section form select,
+.contact-section form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-section form input:focus,
+.contact-section form select:focus,
+.contact-section form textarea:focus {
+    outline: none;
+    border: 1px solid #555;
+}
+
+.contact-section form button {
+    background-color: #444;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background-color: #666;
+}
+
+.contact-section form textarea[name="comments"] {
+    resize: vertical;
+}

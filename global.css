@@ -1,0 +1,90 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+:root {
+    --nav-height: 140px;
+    --nav-margin: 70px;
+
+    --section-height: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px rgba(255, 0, 0, .5) solid;*/
+}
+
+.company-name {
+    font-family: 'Petit Formal Script', "Arial", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: var(--nav-height);
+
+    color: white;
+}
+
+nav .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 350px;*/
+
+    margin-left: calc(var(--nav-margin) - 10px);
+
+    font-size: 20px;
+
+    img {
+        width: 60px;
+    }
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    float: right;
+    margin-right: var(--nav-margin);
+
+    font-size: 18px;
+
+    color: white;
+
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+    }
+    a:hover {
+        color: darkgrey;
+    }
+    a:active {
+        color: dimgray;
+    }
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: calc(var(--section-height) / 2);
+
+    background-color:  white;
+    gap: 2rem;
+}

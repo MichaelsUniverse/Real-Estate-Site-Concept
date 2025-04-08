@@ -12,12 +12,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 50%;
         height: 100%;
-    }
-    .right {
-        width: 50%;
-        height: 100%;
+
+        gap: 20px;
+
+        h2 {
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: underline;
+            color: white;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgb(196, 196, 196);
+        }
     }
 }
 
@@ -28,7 +40,7 @@
     width: clamp(1400px, 100%, 100%);
     z-index: -1;
 
-    filter: saturate(200%) brightness(75%) contrast(110%);
+    filter: saturate(200%) brightness(45%) contrast(100%);
 
     overflow: hidden;
 }
